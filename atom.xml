@@ -4,7 +4,7 @@
   <title><![CDATA[YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T16:40:23+08:00</updated>
+  <updated>2014-12-24T16:53:23+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -50,6 +50,8 @@ rake generate
 <p>使用期间 - 只有当应用处于前台时，应用才可以访问定位信息，后台时则不可以</p>
 
 <p>始终 - 只要应用运行，无论前台后台，都可以访问定位信息</p>
+
+<!--more-->
 
 <p>PS：应用运行指的是包含前台和后台。</p>
 
@@ -132,6 +134,8 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
 <p>但是，就开始各种rake deploy失败，或者deploy成功，原来文章的链接访问都会404。
 在Google各种解决方案不成功后，我去查了jekyll的官方文档，发现里面是这么描述permalink的：</p>
 
+<!--more-->
+
 <p>“Jekyll 支持一种灵活的方式来建立网站的URLs,你可以为一篇文章指定固定的URL，你可以选择内置样式来创建你的链接”，默认风格是：date。</p>
 
 <p>网站的永久链接，通过URL模版来创建，其中动态元素由冒号为前缀的关键字来表示。例如，默认的date固定链接被定义为： </p>
@@ -211,6 +215,8 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
 
 <p>简直是醉了。</p>
 
+<!--more-->
+
 <p>周末老师带研一的同学泡温泉，师兄主动提出带我们出去玩，想想还挺期待的～</p>
 
 <p>周会，改写1.5产品文档，弄博客，充实的一天。</p>
@@ -233,16 +239,24 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
   <li>什么是 Markdown</li>
   <li>为什么需要 Markdown</li>
   <li>
-    <p>如何掌握 Markdown</p>
+    <p>如何掌握 Markdown  </p>
 
-    <p>Markdown 基本语法（Basic Markdown）</p>
-
-    <p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
-
-    <p>Markdown 高级用法</p>
+    <ul>
+      <li>
+        <p>Markdown 基本语法（Basic Markdown）</p>
+      </li>
+      <li>
+        <p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
+      </li>
+      <li>
+        <p>Markdown 高级用法</p>
+      </li>
+    </ul>
   </li>
   <li>Markdown 相关资源</li>
 </ol>
+
+<!--more-->
 
 <h2 id="markdown">什么是 Markdown</h2>
 
@@ -446,6 +460,8 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
     <id>http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
 <p>在在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除一些个人因素之外，我想还有以下几点原因：</p>
+
+<!--more-->
 
 <ol>
   <li>
@@ -796,7 +812,7 @@ git push origin source
     <link href="http://yangyangonline.github.io/blog/20141217/"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
     <id>http://yangyangonline.github.io/blog/post-title</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<!--more-->
 ]]></content>
   </entry>
   
@@ -806,6 +822,8 @@ git push origin source
     <updated>2014-12-17T17:24:03+08:00</updated>
     <id>http://yangyangonline.github.io/blog/my-first-blog</id>
     <content type="html"><![CDATA[<p>你好，我是杨扬，目前就读于北京邮电大学，我想学习更多的知识，看更多的风景，感受更多的文化风情，或许，这样就不会遗憾了。</p>
+
+<!--more-->
 ]]></content>
   </entry>
   

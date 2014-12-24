@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T16:40:23+08:00</updated>
+  <updated>2014-12-24T16:53:23+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -23,16 +23,24 @@
   <li>什么是 Markdown</li>
   <li>为什么需要 Markdown</li>
   <li>
-    <p>如何掌握 Markdown</p>
+    <p>如何掌握 Markdown  </p>
 
-    <p>Markdown 基本语法（Basic Markdown）</p>
-
-    <p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
-
-    <p>Markdown 高级用法</p>
+    <ul>
+      <li>
+        <p>Markdown 基本语法（Basic Markdown）</p>
+      </li>
+      <li>
+        <p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
+      </li>
+      <li>
+        <p>Markdown 高级用法</p>
+      </li>
+    </ul>
   </li>
   <li>Markdown 相关资源</li>
 </ol>
+
+<!--more-->
 
 <h2 id="markdown">什么是 Markdown</h2>
 
@@ -236,6 +244,8 @@
     <id>http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
 <p>在在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除一些个人因素之外，我想还有以下几点原因：</p>
+
+<!--more-->
 
 <ol>
   <li>
@@ -586,7 +596,7 @@ git push origin source
     <link href="http://yangyangonline.github.io/blog/20141217/"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
     <id>http://yangyangonline.github.io/blog/post-title</id>
-    <content type="html"><![CDATA[
+    <content type="html"><![CDATA[<!--more-->
 ]]></content>
   </entry>
   

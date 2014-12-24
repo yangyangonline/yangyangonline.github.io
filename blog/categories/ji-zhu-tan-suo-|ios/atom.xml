@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索|ios | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo-|ios/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T16:40:23+08:00</updated>
+  <updated>2014-12-24T16:53:23+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -27,6 +27,8 @@
 <p>使用期间 - 只有当应用处于前台时，应用才可以访问定位信息，后台时则不可以</p>
 
 <p>始终 - 只要应用运行，无论前台后台，都可以访问定位信息</p>
+
+<!--more-->
 
 <p>PS：应用运行指的是包含前台和后台。</p>
 

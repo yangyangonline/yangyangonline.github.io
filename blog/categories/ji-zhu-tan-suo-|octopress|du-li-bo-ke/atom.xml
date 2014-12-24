@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索|octopress|独立博客 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo-|octopress|du-li-bo-ke/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T16:40:23+08:00</updated>
+  <updated>2014-12-24T16:53:23+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -30,6 +30,8 @@
 
 <p>但是，就开始各种rake deploy失败，或者deploy成功，原来文章的链接访问都会404。
 在Google各种解决方案不成功后，我去查了jekyll的官方文档，发现里面是这么描述permalink的：</p>
+
+<!--more-->
 
 <p>“Jekyll 支持一种灵活的方式来建立网站的URLs,你可以为一篇文章指定固定的URL，你可以选择内置样式来创建你的链接”，默认风格是：date。</p>
 
