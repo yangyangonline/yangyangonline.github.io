@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T16:55:23+08:00</updated>
+  <updated>2014-12-24T17:00:01+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Markdown入门指南]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141218/"/>
+    <link href="http://yangyangonline.github.io/blog/20141218/markdownru-men-zhi-nan/"/>
     <updated>2014-12-18T15:18:31+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/markdownru-men-zhi-nan</id>
+    <id>http://yangyangonline.github.io/blog/20141218/markdownru-men-zhi-nan</id>
     <content type="html"><![CDATA[<h2 id="section">目录</h2>
 <ol>
   <li>什么是 Markdown</li>
@@ -239,9 +239,9 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress+GitHub建立独立静态博客]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141217/"/>
+    <link href="http://yangyangonline.github.io/blog/20141217/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke/"/>
     <updated>2014-12-17T20:11:41+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
+    <id>http://yangyangonline.github.io/blog/20141217/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
 <p>在在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除一些个人因素之外，我想还有以下几点原因：</p>
 
@@ -593,9 +593,9 @@ git push origin source
   
   <entry>
     <title type="html"><![CDATA[Post Title]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141217/"/>
+    <link href="http://yangyangonline.github.io/blog/20141217/post-title/"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/post-title</id>
+    <id>http://yangyangonline.github.io/blog/20141217/post-title</id>
     <content type="html"><![CDATA[<!--more-->
 ]]></content>
   </entry>
