@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索|octopress|独立博客 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo-|octopress|du-li-bo-ke/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T17:04:32+08:00</updated>
+  <updated>2014-12-24T17:17:38+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -100,6 +100,12 @@
 <p>于是，我在_config.yml文件里，将permalink改为none，再commit，push。文章页面都可以顺利访问了！</p>
 
 <p>成功，一个平淡无奇的12月里的周六，解决了一个技术问题。嘿嘿～开森～</p>
+
+<p><strong>12.24修改</strong></p>
+
+ 	permalink: /blog/:title.html 
+
+<p>同样可以！</p>
 ]]></content>
   </entry>
   

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：私人博客 | YangYang’s Blog]]></title>
+  <link href="http://yangyangonline.github.io/blog/categories/si-ren-bo-ke/atom.xml" rel="self"/>
+  <link href="http://yangyangonline.github.io/"/>
+  <updated>2014-12-24T17:17:38+08:00</updated>
+  <id>http://yangyangonline.github.io/</id>
+  <author>
+    <name><![CDATA[杨扬]]></name>
+    <email><![CDATA[yangyang0902@foxmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Change the Webfont for Blog]]></title>
+    <link href="http://yangyangonline.github.io/blog/change-the-webfont-for-blog.html"/>
+    <updated>2014-12-24T17:11:27+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/change-the-webfont-for-blog</id>
+    <content type="html"><![CDATA[<h2 id="section">修改字体</h2>
+
+<p>Octopresss默认使用的是 google webfonts，见source/_includes/custom/head.html里的两行代码。Google Webfonts是个好东西，但遗憾的是它没有中文字体。所以你用粗体，发现并没有变粗，就是这个原因。</p>
+
+<!--more-->
+
+<p>首先，将head.html中的两行代码注释掉，省去了加载字体，<strong>加快网页加载速度</strong>。</p>
+
+<pre><code>&lt;!--Fonts from Google"s Web font directory at http://google.com/webfonts --&gt;
+&lt;!-- &lt;link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"&gt; --&gt;
+&lt;!-- &lt;link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css"&gt; --&gt;
+</code></pre>
+
+<p>参考 这篇博客 <a href="http://lifesinger.wordpress.com/2011/04/06/best-web-default-fonts/">最佳Web中文默认字体</a>，在sass/custom/_fonts.scss中添加如下三行代码：</p>
+
+<pre><code>$heading-font-family: arial, sans-serif;
+$header-title-font-family: arial, sans-serif;
+$header-subtitle-font-family: arial, sans-serif;
+</code></pre>
+
+<p>刷新网页，可以看见中文的粗体变黑了。		</p>
+]]></content>
+  </entry>
+  
+</feed>
