@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索|octopress|独立博客 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo-|octopress|du-li-bo-ke/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T17:00:01+08:00</updated>
+  <updated>2014-12-24T17:01:49+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[尝试修改permalink]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141220/chang-shi-xiu-gai-permalink/"/>
+    <link href="http://yangyangonline.github.io/blog/20141220chang-shi-xiu-gai-permalink/"/>
     <updated>2014-12-20T22:54:29+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/20141220/chang-shi-xiu-gai-permalink</id>
+    <id>http://yangyangonline.github.io/blog/chang-shi-xiu-gai-permalink</id>
     <content type="html"><![CDATA[<p>在上一次成功构建网站后，我发现以前的permalink是这样的：</p>
 
 <pre><code>permalink: /blog/:year/:month/:day/:title/ #文章固定链接
