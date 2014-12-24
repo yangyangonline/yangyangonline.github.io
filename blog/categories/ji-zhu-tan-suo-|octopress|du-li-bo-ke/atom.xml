@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 技术探索|octopress|独立博客 | My Octopress Blog]]></title>
+  <title><![CDATA[分类：技术探索|octopress|独立博客 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo-|octopress|du-li-bo-ke/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T15:13:41+08:00</updated>
+  <updated>2014-12-24T15:21:17+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[杨扬]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[尝试修改permalink]]></title>
-    <link href="http://yangyangonline.github.io/blog/2014/12/20/chang-shi-xiu-gai-permalink/"/>
+    <link href="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Coctopress%7C%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/chang-shi-xiu-gai-permalink.html"/>
     <updated>2014-12-20T22:54:29+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/2014/12/20/chang-shi-xiu-gai-permalink</id>
+    <id>http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Coctopress%7C%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/chang-shi-xiu-gai-permalink</id>
     <content type="html"><![CDATA[<p>在上一次成功构建网站后，我发现以前的permalink是这样的：</p>
 
 <pre><code>permalink: /blog/:year/:month/:day/:title/ #文章固定链接
@@ -25,82 +25,79 @@
 
 <p>这种层级太多了，对于个人博客来说，是不必要的。于是，我尝试修改成：</p>
 
-<pre><code>permalink: /blog/:title.html/ #实现第二种  
+<pre><code>permalink: /blog/:title.html/ #实现第二种	
 </code></pre>
 
 <p>但是，就开始各种rake deploy失败，或者deploy成功，原来文章的链接访问都会404。
 在Google各种解决方案不成功后，我去查了jekyll的官方文档，发现里面是这么描述permalink的：</p>
 
-<p>&ldquo;Jekyll 支持一种灵活的方式来建立网站的URLs,你可以为一篇文章指定固定的URL，你可以选择内置样式来创建你的链接&#8221;，默认风格是：date。</p>
+<p>“Jekyll 支持一种灵活的方式来建立网站的URLs,你可以为一篇文章指定固定的URL，你可以选择内置样式来创建你的链接”，默认风格是：date。</p>
 
-<p>网站的永久链接，通过URL模版来创建，其中动态元素由冒号为前缀的关键字来表示。例如，默认的date固定链接被定义为：</p>
+<p>网站的永久链接，通过URL模版来创建，其中动态元素由冒号为前缀的关键字来表示。例如，默认的date固定链接被定义为： </p>
 
 <pre><code>/:categories/:year/:month/:day/:title.html 
 </code></pre>
 
-<h2>内置固定链接样式</h2>
-
+<h2 id="section">内置固定链接样式</h2>
 <p>注意：这些可能仅适用于文章，而不是网页，集合或者静态文件。网页，集合或者静态文件有自己指定的链接方式。</p>
 
 <table>
-<thead>
-<tr>
-<th>永久链接样式 </th>
-<th> URL模版 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>date       </td>
-<td> /:categories/:year/:month/:day/:title.html </td>
-</tr>
-<tr>
-<td>pretty     </td>
-<td> /:categories/:year/:month/:day/:title/ </td>
-</tr>
-<tr>
-<td>none       </td>
-<td> /:categories/:title.html      </td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>永久链接样式</th>
+      <th>URL模版</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>date</td>
+      <td>/:categories/:year/:month/:day/:title.html</td>
+    </tr>
+    <tr>
+      <td>pretty</td>
+      <td>/:categories/:year/:month/:day/:title/</td>
+    </tr>
+    <tr>
+      <td>none</td>
+      <td>/:categories/:title.html</td>
+    </tr>
+  </tbody>
 </table>
 
-
-<h2>举例</h2>
+<h2 id="section-1">举例</h2>
 
 <p>给定一个post，它的名字为：/2009-04-29-slap-chop.textile</p>
 
 <table>
-<thead>
-<tr>
-<th>永久链接样式                      </th>
-<th> URL模版 </th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>date或者为空                      </td>
-<td> /2009/04/29/slap-chop.html</td>
-</tr>
-<tr>
-<td>pretty                          </td>
-<td> /2009/04/29/slap-chop/index.html</td>
-</tr>
-<tr>
-<td>/:month-:day-:year/:title.html  </td>
-<td> /04-29-2009/slap-chop.html</td>
-</tr>
-<tr>
-<td>/blog/:year/:month/:day/:title  </td>
-<td>  /blog/2009/04/29/slap-chop/index.html</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>永久链接样式</th>
+      <th>URL模版</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>date或者为空</td>
+      <td>/2009/04/29/slap-chop.html</td>
+    </tr>
+    <tr>
+      <td>pretty</td>
+      <td>/2009/04/29/slap-chop/index.html</td>
+    </tr>
+    <tr>
+      <td>/:month-:day-:year/:title.html</td>
+      <td>/04-29-2009/slap-chop.html</td>
+    </tr>
+    <tr>
+      <td>/blog/:year/:month/:day/:title</td>
+      <td>/blog/2009/04/29/slap-chop/index.html</td>
+    </tr>
+  </tbody>
 </table>
 
+<p>于是，我在_config.yml文件里，将permalink改为none，再commit，push。文章页面都可以顺利访问了！</p>
 
-<p> 于是，我在_config.yml文件里，将permalink改为none，再commit，push。文章页面都可以顺利访问了！</p>
-
-<p> 成功，一个平淡无奇的12月里的周六，解决了一个技术问题。嘿嘿～开森～</p>
+<p>成功，一个平淡无奇的12月里的周六，解决了一个技术问题。嘿嘿～开森～</p>
 ]]></content>
   </entry>
   

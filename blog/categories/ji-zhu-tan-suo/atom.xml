@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: 技术探索 | My Octopress Blog]]></title>
+  <title><![CDATA[分类：技术探索 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T15:13:41+08:00</updated>
+  <updated>2014-12-24T15:21:17+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[杨扬]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -15,26 +15,26 @@
   
   <entry>
     <title type="html"><![CDATA[Markdown入门指南]]></title>
-    <link href="http://yangyangonline.github.io/blog/2014/12/18/markdownru-men-zhi-nan/"/>
+    <link href="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/markdownru-men-zhi-nan.html"/>
     <updated>2014-12-18T15:18:31+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/2014/12/18/markdownru-men-zhi-nan</id>
-    <content type="html"><![CDATA[<h2>目录</h2>
-
+    <id>http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/markdownru-men-zhi-nan</id>
+    <content type="html"><![CDATA[<h2 id="section">目录</h2>
 <ol>
-<li>什么是 Markdown</li>
-<li>为什么需要 Markdown</li>
-<li><p>如何掌握 Markdown</p>
+  <li>什么是 Markdown</li>
+  <li>为什么需要 Markdown</li>
+  <li>
+    <p>如何掌握 Markdown</p>
 
-<p>Markdown 基本语法（Basic Markdown）</p>
+    <p>Markdown 基本语法（Basic Markdown）</p>
 
-<p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
+    <p>Markdown 扩展语法（GitHub Flavored Markdown）</p>
 
-<p>Markdown 高级用法</p></li>
-<li><p>Markdown 相关资源</p></li>
+    <p>Markdown 高级用法</p>
+  </li>
+  <li>Markdown 相关资源</li>
 </ol>
 
-
-<h2>什么是 Markdown</h2>
+<h2 id="markdown">什么是 Markdown</h2>
 
 <p>Markdown 是一种适用于网络书写的轻量级「标记语言」</p>
 
@@ -62,11 +62,9 @@
 
 <p>怎么样，是不是感觉 Markdown 语言读、写起来都更清爽呢:-)</p>
 
-<h2>为什么需要 Markdown</h2>
-
-<h3>Markdown 优点</h3>
-
-<p>纯文本，所以兼容性极强，可以用所有文本编辑器打开。</p>
+<h2 id="markdown-1">为什么需要 Markdown</h2>
+<p>###Markdown 优点
+纯文本，所以兼容性极强，可以用所有文本编辑器打开。</p>
 
 <p>Markdown 的标记语法有极好的可读性。</p>
 
@@ -74,29 +72,24 @@
 
 <p>格式转换方便，Markdown 的文本你可以轻松转换为 html、电子书等。</p>
 
-<h3>谁在使用 Markdown</h3>
-
+<h3 id="markdown-2">谁在使用 Markdown</h3>
 <p>Markdown 诞生于互联网时代，更是由深谙互联网文本之道的 John Gruber 等人设计。因为 Ruby 与 Github 圈的极客们的热捧，以及来自 Github、Stackoverflow 等网站的大力支持（Github 和 Stackoverflow 的 Issues, comments, pull request descriptions and READMEs 都支持 Markdown 语法）。从一开始，就建立一个完整的生态链。</p>
 
 <p>一切就这么简单。Markdown之所以在被鼓吹之后，越来越流行，不是因为它复杂，而是因为它足够简单。</p>
 
-<h3>如何掌握 Markdown</h3>
-
+<h3 id="markdown-3">如何掌握 Markdown</h3>
 <p>Markdown 的语法十分简单。常用的标记符号不超过十个，5分钟即可掌握。应该是为数不多，你真的可以彻底学会的语言。</p>
 
-<h3>基本 Markdown 语法</h3>
+<h3 id="markdown-">基本 Markdown 语法</h3>
+<p>####1. 标题
+	# 一级标题
+ 	## 二级标题
+ 	### 三级标题
+ 	#### 四级标题
+ 	##### 五级标题
+	###### 六级标题</p>
 
-<h4>1. 标题</h4>
-
-<pre><code># 一级标题
-## 二级标题
-### 三级标题
-#### 四级标题
-##### 五级标题
-###### 六级标题
-</code></pre>
-
-<h3>2. 列表</h3>
+<h3 id="section-1">2. 列表</h3>
 
 <pre><code> - 无序列表1
  - 无序列表2
@@ -107,32 +100,31 @@
  3. 有序列表3
 </code></pre>
 
-<h3>3. 引用</h3>
+<h3 id="section-2">3. 引用</h3>
 
 <pre><code>&gt; 这个是引用
 &gt; 是不是和电子邮件中的
 &gt; 引用格式很像
 </code></pre>
 
-<h3>4. 粗体与斜体</h3>
+<h3 id="section-3">4. 粗体与斜体</h3>
 
 <pre><code> **这个是粗体**
  *这个是斜体*
 </code></pre>
 
-<h3>5. 图片与链接</h3>
-
-<h4>插入图片</h4>
+<h3 id="section-4">5. 图片与链接</h3>
+<p>####插入图片</p>
 
 <pre><code>![baidu logo](http://www.baidu.com/img/bdlogo.png)
 </code></pre>
 
-<h4>插入链接</h4>
+<h4 id="section-5">插入链接</h4>
 
 <pre><code>[baidu](http://www.baidu.com/)
 </code></pre>
 
-<h4>图片链接</h4>
+<h4 id="section-6">图片链接</h4>
 
 <pre><code>[![][jane-eyre-pic]][jane-eyre-douban]
 
@@ -140,7 +132,7 @@
 [jane-eyre-douban]: http://book.douban.com/subject/1141406/
 </code></pre>
 
-<h4>6. 代码</h4>
+<h4 id="section-7">6. 代码</h4>
 
 <p>用TAB键起始的段落，会被认为是代码块</p>
 
@@ -154,7 +146,7 @@
 <pre><code> Use the `printf()` function.
 </code></pre>
 
-<h3>7. 分割线</h3>
+<h3 id="section-8">7. 分割线</h3>
 
 <p>可以在一行中用三个以上的星号、减号、底线来建立一个分隔线</p>
 
@@ -163,21 +155,22 @@
 
 <p>注：更详细的 Markdown 基本语法，请参考<a href="http://wowubuntu.com/markdown/">Markdown中文版语法说明</a></p>
 
-<h2>扩展 Markdown 语法（github扩展语法）</h2>
+<h2 id="markdown-github">扩展 Markdown 语法（github扩展语法）</h2>
 
-<h3>1. 删除线</h3>
+<h3 id="section-9">1. 删除线</h3>
 
 <pre><code> ~~Mistaken text.~~
 </code></pre>
 
-<h3>2. 代码块与语法高亮</h3>
+<h3 id="section-10">2. 代码块与语法高亮</h3>
 
-<pre><code class="`ruby"> require 'redcarpet'
+<p><code>ruby
+ require 'redcarpet'
  markdown = Redcarpet.new("Hello World!")
  puts markdown.to_html
-</code></pre>
+</code></p>
 
-<h3>3. 表格</h3>
+<h3 id="section-11">3. 表格</h3>
 
 <pre><code>| Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
@@ -186,7 +179,7 @@
 | zebra stripes | are neat      |    $1 |
 </code></pre>
 
-<h3>4. 任务列表</h3>
+<h3 id="section-12">4. 任务列表</h3>
 
 <pre><code>- [x] @mentions, #refs, [links](), **formatting**, and &lt;del&gt;tags&lt;/del&gt; are supported
 - [x] list syntax is required (any unordered or ordered list supported)
@@ -198,18 +191,18 @@
 
 <p><strong>注2</strong>：GFM扩展语法并非所有的 Markdown 编辑器都支持。</p>
 
-<h2>其他高级用法</h2>
+<h2 id="section-13">其他高级用法</h2>
 
-<h3>Cross-reference (named anchor) in markdown</h3>
+<h3 id="cross-reference-named-anchor-in-markdown">Cross-reference (named anchor) in markdown</h3>
 
 <pre><code>Take me to [pookie](#pookie)
 
  &lt;a name="pookie"&gt;&lt;/a&gt;
 </code></pre>
 
-<p>参考这里（<a href="http://stackoverflow.com/questions/5319754/cross-reference-named-anchor-in-markdown%EF%BC%89">http://stackoverflow.com/questions/5319754/cross-reference-named-anchor-in-markdown%EF%BC%89</a></p>
+<p>参考这里（http://stackoverflow.com/questions/5319754/cross-reference-named-anchor-in-markdown）</p>
 
-<h3>引用代码块中包含反引号</h3>
+<h3 id="section-14">引用代码块中包含反引号</h3>
 
 <p>只需使用比代码块中反引号更多的连续反引号来实现
 例如：引用 Markdown 代码区段：</p>
@@ -222,65 +215,73 @@
  ````
 </code></pre>
 
-<h2>Markdown 相关资源</h2>
-
+<h2 id="markdown--1">Markdown 相关资源</h2>
 <ul>
-<li><p>Markdown 作者之一<a href="http://coolshell.cn/articles/11928.html">Aaron Swartz</a></p></li>
-<li><p>Markdown 写作网站<a href="http://www.jianshu.com/">简书</a>上图文并茂的<a href="http://www.jianshu.com/p/q81RER">新手指引</a>和<a href="http://www.jianshu.com/p/1e402922ee32/">入门指南</a></p></li>
-<li><p>另一个不错的 Markdown 写作网站<a href="http://markable.in/">Markable</a>,可以同步到EverNote</p></li>
-<li>对于需要书写公式的科技工作者，可以参考这篇<a href="http://www.jianshu.com/p/PpDNMG">Markdown写作浅谈</a></li>
+  <li>
+    <p>Markdown 作者之一<a href="http://coolshell.cn/articles/11928.html">Aaron Swartz</a></p>
+  </li>
+  <li>
+    <p>Markdown 写作网站<a href="http://www.jianshu.com/">简书</a>上图文并茂的<a href="http://www.jianshu.com/p/q81RER">新手指引</a>和<a href="http://www.jianshu.com/p/1e402922ee32/">入门指南</a></p>
+  </li>
+  <li>另一个不错的 Markdown 写作网站<a href="http://markable.in/">Markable</a>,可以同步到EverNote</li>
+  <li>对于需要书写公式的科技工作者，可以参考这篇<a href="http://www.jianshu.com/p/PpDNMG">Markdown写作浅谈</a></li>
 </ul>
-
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Octopress+GitHub建立独立静态博客]]></title>
-    <link href="http://yangyangonline.github.io/blog/2014/12/17/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke/"/>
+    <link href="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke.html"/>
     <updated>2014-12-17T20:11:41+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/2014/12/17/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
-    <content type="html"><![CDATA[<h2>1.为什么选择Octopress和GitHub Pages?</h2>
-
+    <id>http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
+    <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
 <p>在在做任何事情之前最好先问个为什么，尽管很多情况下未必有答案，但这个做法绝对有好处。用 Octopress 搭建博客，并托管到 Github Pages，撇除一些个人因素之外，我想还有以下几点原因：</p>
 
 <ol>
-<li><p>免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。</p></li>
-<li><p>版本控制。写文章，建网站，做软件都需要修改，但有时候改完了又会后悔，如果有时光机就好了，Git 就是你的时光机。当然如果你不想了解这些看上去很唬人的 IT 名词，只是想写博客的话，请在需要的时候再研究这条的内容。</p></li>
-<li><p>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多装修范例和更多熟练的装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</p></li>
-<li><p>使用 Markdown。Markdown 是现在最为流行的轻量级标记语言，也是已故的天才 Aaron Swartz 留给世人最好的礼物，窃以为每个在互联网上发布文章的人都该掌握。</p></li>
-<li><p>按照官方的说法，Octopress 是个「为黑客设计的博客框架」，这很酷，你不觉得吗？</p></li>
+  <li>
+    <p>免费且独立。把 Octopress 博客系统搭建到 Github Pages 虽是免费，但不失独立性，即便 Github 全站关闭，你也将有一份本地全站备份，随时可以重新恢复。不必受托管商之气，而且还免费，如果你愿意，甚至可以自行插入广告挣钱。</p>
+  </li>
+  <li>
+    <p>版本控制。写文章，建网站，做软件都需要修改，但有时候改完了又会后悔，如果有时光机就好了，Git 就是你的时光机。当然如果你不想了解这些看上去很唬人的 IT 名词，只是想写博客的话，请在需要的时候再研究这条的内容。</p>
+  </li>
+  <li>
+    <p>相对其他托管到 Github 上的博客程序，Octopress 更加成熟易上手。打个比方，Jekyll 可以说是毛坯房，Hexo 和 Octopress 算是简装修，但相比 Hexo，Octopress 有更多装修范例和更多熟练的装修工人，更容易获取帮助。当然如果你只想住精装修的房子，那不得不花点钱上 WordPress 了。</p>
+  </li>
+  <li>
+    <p>使用 Markdown。Markdown 是现在最为流行的轻量级标记语言，也是已故的天才 Aaron Swartz 留给世人最好的礼物，窃以为每个在互联网上发布文章的人都该掌握。</p>
+  </li>
+  <li>
+    <p>按照官方的说法，Octopress 是个「为黑客设计的博客框架」，这很酷，你不觉得吗？</p>
+  </li>
 </ol>
-
 
 <p>如果你之前没有写过博客，打算开始搭建自己第一个博客的话，其实也不妨试试 Octopress，免费还能学到东西，何乐而不为？</p>
 
-<h2>2.准备工作</h2>
-
+<h2 id="section">2.准备工作</h2>
 <p>既然是为黑客设计的博客框架，安装起来肯定没有像普通应用程序那么简单，需要一些准备工作，但请相信我，并不复杂。</p>
 
-<h3>2.1 安装git</h3>
+<h3 id="git">2.1 安装git</h3>
 
 <p>既然要使用 Github，那么肯定首先要安装 Git，这个很简单：</p>
 
 <ol>
-<li><a href="http://git-scm.com/">点击这里</a>到 Git 官方网站。</li>
-<li>找到对应你的系统的版本下载链接，按照提示下载并安装。</li>
+  <li><a href="http://git-scm.com/">点击这里</a>到 Git 官方网站。</li>
+  <li>找到对应你的系统的版本下载链接，按照提示下载并安装。</li>
 </ol>
 
-
-<h3>2.2 安装Ruby</h3>
+<h3 id="ruby">2.2 安装Ruby</h3>
 
 <p>安装 Ruby 稍稍有些复杂，不过你只要按照以下步骤一步一步来就好了：</p>
 
 <ol>
-<li><p>安装HomeBrew</p>
-
-<p> <a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store. 正如我们用 Mac App Store 来安装其他软件一样，我们这一步安装 HomeBrew 的目的是为了安装别的软件 (Ruby) 。当然 Mac App Store 和 HomeBrew 本身也是软件。
- 安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：</p>
-
-<p> ruby -e &ldquo;$(curl -fsSL <a href="https://raw.github.com/Homebrew/homebrew/go/install">https://raw.github.com/Homebrew/homebrew/go/install</a>)</p></li>
+  <li>安装HomeBrew</li>
 </ol>
 
+ 	<a href="http://brew.sh/index_zh-cn.html">HomeBrew</a> 是一个非常有用的软件包管理系统，你可以把它想象成一个稍微抽象一点的 Mac App Store. 正如我们用 Mac App Store 来安装其他软件一样，我们这一步安装 HomeBrew 的目的是为了安装别的软件 (Ruby) 。当然 Mac App Store 和 HomeBrew 本身也是软件。
+ 	安装 HomeBrew 非常简单，打开终端 (Terminal)，执行以下命令（所谓「执行」即「输入+回车」，下同）：
+
+<pre><code>ruby -e "$(curl -fsSL https://raw.github.com/Homebrew/homebrew/go/install)	
+</code></pre>
 
 <p>如果在执行上如命令的时候弹出需要安装 Xcode Command Line Tool 的提示，直接点击安装即可。</p>
 
@@ -289,7 +290,7 @@
 <pre><code>xcode-select --install
 </code></pre>
 
-<p> 成功则显示：</p>
+<p>成功则显示：</p>
 
 <pre><code>xcode-select: error: command line tools are already installed, use "Software Update" to install updates
 </code></pre>
@@ -307,9 +308,8 @@
 <p>如遇问题，则按照提示处理，如果不懂如何处理可以先试着执行后面的步骤，如果能成功，则没有太大问题，毕竟我们只是想写博客而已。当然，做任何事情之前，备份是必须的。</p>
 
 <ol>
-<li>使用 RVM 安装 Ruby</li>
+  <li>使用 RVM 安装 Ruby</li>
 </ol>
-
 
 <p>执行以下命令安装 RVM，最新的稳定版 Ruby 也会随之安装：</p>
 
@@ -323,13 +323,13 @@ rvm use 2.0.0
 rvm rubygems latest
 </code></pre>
 
-<p>可以执行ruby &ndash;version命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.0.0</p>
+<p>可以执行ruby –version命令来查看现在使用的 Ruby 版本，确保正在使用的是 Ruby 2.0.0</p>
 
-<h3>2.3 注册Github账号</h3>
+<h3 id="github">2.3 注册Github账号</h3>
 
-<p>这个没什么好说的，早晚需要，去 <a href="http://github.com">http://github.com</a> 注册吧。</p>
+<p>这个没什么好说的，早晚需要，去 http://github.com 注册吧。</p>
 
-<h3>2.4 域名指向（可选）</h3>
+<h3 id="section-1">2.4 域名指向（可选）</h3>
 
 <p>如果你有自己的域名可用，可以在这时就配置好，毕竟解析起来需要一段时间，不如在我们搭建博客的时候让它开始，这样我们搭建完成后，基本上就可以直接用自有域名访问了。</p>
 
@@ -339,7 +339,7 @@ rvm rubygems latest
 
 <p>如果你暂时没有域名，这一步可以暂时不用管。</p>
 
-<h2>3.本地安装 Octopress</h2>
+<h2 id="octopress">3.本地安装 Octopress</h2>
 
 <p>终于进入正题了。有了前面的准备工作，安装 Octopress 显得非常简单：</p>
 
@@ -362,16 +362,16 @@ cd octopress
 
 <p>1）修改gemfile</p>
 
-<p>由于大陆的“特殊情况”，rails默认生成的Gemfile的源 <a href="https://rubygems.org">https://rubygems.org</a> 很慢甚至被重置，所以适应国情，要修改下Rails默认生成的Gemfile文件。</p>
+<p>由于大陆的“特殊情况”，rails默认生成的Gemfile的源 https://rubygems.org 很慢甚至被重置，所以适应国情，要修改下Rails默认生成的Gemfile文件。</p>
 
-<p>修改octopress文件夹里的Gemfile文件，替换 <a href="https://rubygems.org">https://rubygems.org</a> 为 <a href="http://ruby.taobao.org">http://ruby.taobao.org</a></p>
+<p>修改octopress文件夹里的Gemfile文件，替换 https://rubygems.org 为 http://ruby.taobao.org </p>
 
 <p>执行：</p>
 
 <pre><code>gem install jekyll --version “2.0.0"
 </code></pre>
 
-<p>完毕后</p>
+<p>完毕后		</p>
 
 <pre><code>bundle install
 </code></pre>
@@ -388,13 +388,13 @@ cd octopress
 <pre><code>rake preview
 </code></pre>
 
-<p>然后在浏览器内输入 <a href="http://localhost:4000/%EF%BC%8C%E5%8D%B3%E5%8F%AF%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90%E7%9A%84%E5%8D%9A%E5%AE%A2%E3%80%82%E4%B9%9F%E8%AE%B8%E5%B9%B6%E4%B8%8D%E5%A5%BD%E7%9C%8B%EF%BC%8C%E4%BD%86%E5%BE%88%E4%BB%A4%E4%BA%BA%E5%BC%80%E5%BF%83%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%B9%88%EF%BC%9F">http://localhost:4000/%EF%BC%8C%E5%8D%B3%E5%8F%AF%E7%9C%8B%E5%88%B0%E6%88%91%E4%BB%AC%E6%90%AD%E5%BB%BA%E5%AE%8C%E6%88%90%E7%9A%84%E5%8D%9A%E5%AE%A2%E3%80%82%E4%B9%9F%E8%AE%B8%E5%B9%B6%E4%B8%8D%E5%A5%BD%E7%9C%8B%EF%BC%8C%E4%BD%86%E5%BE%88%E4%BB%A4%E4%BA%BA%E5%BC%80%E5%BF%83%EF%BC%8C%E4%B8%8D%E6%98%AF%E4%B9%88%EF%BC%9F</a></p>
+<p>然后在浏览器内输入 http://localhost:4000/，即可看到我们搭建完成的博客。也许并不好看，但很令人开心，不是么？</p>
 
-<p><strong>注意：以上各步中如果出现权限问题（关键词 permission），无法完成（关键词 abort）的话，请在各命令前加上 sudo+空格，如有提示，请输入电脑登录密码。</strong></p>
+<p><strong>注意：以上各步中如果出现权限问题（关键词 permission），无法完成（关键词 abort）的话，请在各命令前加上 sudo+空格，如有提示，请输入电脑登录密码。</strong>	</p>
 
-<h2>4.将 Octopress 部署到 Github Pages</h2>
+<h2 id="octopress--github-pages">4.将 Octopress 部署到 Github Pages</h2>
 
-<h3>4.1 新建库 (Repository)</h3>
+<h3 id="repository">4.1 新建库 (Repository)</h3>
 
 <p>用刚刚注册的 Github 账号登录，然后在点击页面右上角的加号，在弹出菜单中点击 New Repository: 如图所示
 <img src="Repository.png" alt="权限选择" /></p>
@@ -403,7 +403,7 @@ cd octopress
 
 <p>如果一切顺利会出现一个页面，有一个 SSH 地址，形如 git@github.com:[your_username]/[your_username].github.io.git，下一步会用到。</p>
 
-<h3>4.2 将本地部署的 Octopress 发布到 Github Pages</h3>
+<h3 id="octopress--github-pages-1">4.2 将本地部署的 Octopress 发布到 Github Pages</h3>
 
 <p>打开终端 (Terminal)，执行以下命令：</p>
 
@@ -421,7 +421,7 @@ rake deploy
 
 <p>第一行命令用来生成页面，第二行命令用来部署页面，可按照字面意思理解。如果理解不了，可以暂且不管。任何一步如果出现失败提示，请使用 sudo。</p>
 
-<p>如果上述内容完成，即可使用 <a href="http://">http://</a>[your_username].github.io/ 访问页面，将会出现一个和在本地预览时相同的页面。</p>
+<p>如果上述内容完成，即可使用 http://[your_username].github.io/ 访问页面，将会出现一个和在本地预览时相同的页面。</p>
 
 <p>然后，不要忘了把源文件全部发布到 source 分支下面，再一次可以看不懂，执行以下命令：</p>
 
@@ -430,7 +430,7 @@ git commit -m "备注内容"
 git push origin source
 </code></pre>
 
-<h3>4.3 使用自己的域名（可选）</h3>
+<h3 id="section-2">4.3 使用自己的域名（可选）</h3>
 
 <p>如果你有自己的域名，并且想指向这个新博客的话，请首先确保执行了 2.4 节中的内容。如果没有执行，可以随时执行。</p>
 
@@ -439,15 +439,15 @@ git push origin source
 <pre><code>echo 'your-domain.com' &gt;&gt; source/CNAME
 </code></pre>
 
-<p>然后再次执行以下命令：</p>
+<p>然后再次执行以下命令：	</p>
 
 <pre><code>rake generate
-rake deploy 
+rake deploy	
 </code></pre>
 
 <p>这样你就可以使用自己的域名了。域名解析需要一段时间，如果没有马上生效，请不要着急。如果长时间没有生效，请确保完整执行了 2.4 节和本节内容。</p>
 
-<h2>5.发布新贴</h2>
+<h2 id="section-3">5.发布新贴</h2>
 
 <p>博客搭建好了，我们可以开始我们的第一贴了。那么怎么发布新贴呢？如果你真的想像个黑客一样写博客，我们可以继续使用我们的终端 (Terminal) 和命令行，执行以下命令：</p>
 
@@ -531,8 +531,8 @@ hint: See the 'Note about fast-forwards' in 'git push --help' for details.
 
 <p><strong>解决方法</strong></p>
 
-<p>git config &ndash;global push.default matching
-git config &ndash;global push.default simple</p>
+<p>git config –global push.default matching
+git config –global push.default simple</p>
 
 <p>出现新问题
 fatal: The upstream branch of your current branch does not match
@@ -547,19 +547,19 @@ on the remote, use</p>
 <pre><code>git push origin source
 </code></pre>
 
-<h5>最终解决方案：</h5>
+<h5 id="section-4">最终解决方案：</h5>
 
 <p>修改Rakefile</p>
 
-<p>Bundler.with_clean_env { system &ldquo;git pull&rdquo; }</p>
+<p>Bundler.with_clean_env { system “git pull” }</p>
 
 <p>改为
-Bundler.with_clean_env { system &ldquo;git pull origin #{deploy_branch}” }</p>
+Bundler.with_clean_env { system “git pull origin #{deploy_branch}” }</p>
 
-<p>Bundler.with_clean_env { system &ldquo;git push&rdquo; }</p>
+<p>Bundler.with_clean_env { system “git push” }</p>
 
 <p>改为
-Bundler.with_clean_env { system &ldquo;git push origin #{deploy_branch}” }</p>
+Bundler.with_clean_env { system “git push origin #{deploy_branch}” }</p>
 
 <p>这样你的第一篇日志就发布出来了，恭喜你正式开通了基于 Octopress 的独立博客。</p>
 
@@ -577,14 +577,15 @@ rake deploy
 git commit -m "备注内容"
 git push origin source
 </code></pre>
+
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Post Title]]></title>
-    <link href="http://yangyangonline.github.io/blog/2014/12/17/post-title/"/>
+    <link href="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/post-title.html"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
-    <id>http://yangyangonline.github.io/blog/2014/12/17/post-title</id>
+    <id>http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/post-title</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
