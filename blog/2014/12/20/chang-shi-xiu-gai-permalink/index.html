@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>尝试修改permalink - My Octopress Blog</title>
+  <meta name="author" content="Your Name">
+
+  
+  <meta name="description" content="在上一次成功构建网站后，我发现以前的permalink是这样的： permalink: /blog/:year/:month/:day/:title/ #文章固定链接 这种层级太多了，对于个人博客来说，是不必要的。于是，我尝试修改成： permalink: /blog/:title.html/ # &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yangyangonline.github.io/blog/2014/12/20/chang-shi-xiu-gai-permalink">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">My Octopress Blog</a></h1>
+  
+    <h2>A blogging framework for hackers.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="yangyangonline.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">尝试修改permalink</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-20T22:54:29+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:54 pm</span></time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>在上一次成功构建网站后，我发现以前的permalink是这样的：</p>
+
+<pre><code>permalink: /blog/:year/:month/:day/:title/ #文章固定链接
+</code></pre>
+
+<p>这种层级太多了，对于个人博客来说，是不必要的。于是，我尝试修改成：</p>
+
+<pre><code>permalink: /blog/:title.html/ #实现第二种  
+</code></pre>
+
+<p>但是，就开始各种rake deploy失败，或者deploy成功，原来文章的链接访问都会404。
+在Google各种解决方案不成功后，我去查了jekyll的官方文档，发现里面是这么描述permalink的：</p>
+
+<p>&ldquo;Jekyll 支持一种灵活的方式来建立网站的URLs,你可以为一篇文章指定固定的URL，你可以选择内置样式来创建你的链接&#8221;，默认风格是：date。</p>
+
+<p>网站的永久链接，通过URL模版来创建，其中动态元素由冒号为前缀的关键字来表示。例如，默认的date固定链接被定义为：</p>
+
+<pre><code>/:categories/:year/:month/:day/:title.html 
+</code></pre>
+
+<h2>内置固定链接样式</h2>
+
+<p>注意：这些可能仅适用于文章，而不是网页，集合或者静态文件。网页，集合或者静态文件有自己指定的链接方式。</p>
+
+<table>
+<thead>
+<tr>
+<th>永久链接样式 </th>
+<th> URL模版 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date       </td>
+<td> /:categories/:year/:month/:day/:title.html </td>
+</tr>
+<tr>
+<td>pretty     </td>
+<td> /:categories/:year/:month/:day/:title/ </td>
+</tr>
+<tr>
+<td>none       </td>
+<td> /:categories/:title.html      </td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>举例</h2>
+
+<p>给定一个post，它的名字为：/2009-04-29-slap-chop.textile</p>
+
+<table>
+<thead>
+<tr>
+<th>永久链接样式                      </th>
+<th> URL模版 </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>date或者为空                      </td>
+<td> /2009/04/29/slap-chop.html</td>
+</tr>
+<tr>
+<td>pretty                          </td>
+<td> /2009/04/29/slap-chop/index.html</td>
+</tr>
+<tr>
+<td>/:month-:day-:year/:title.html  </td>
+<td> /04-29-2009/slap-chop.html</td>
+</tr>
+<tr>
+<td>/blog/:year/:month/:day/:title  </td>
+<td>  /blog/2009/04/29/slap-chop/index.html</td>
+</tr>
+</tbody>
+</table>
+
+
+<p> 于是，我在_config.yml文件里，将permalink改为none，再commit，push。文章页面都可以顺利访问了！</p>
+
+<p> 成功，一个平淡无奇的12月里的周六，解决了一个技术问题。嘿嘿～开森～</p>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Your Name</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-12-20T22:54:29+08:00'><span class='date'><span class='date-month'>Dec</span> <span class='date-day'>20</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>10:54 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ji-zhu-tan-suo-|octopress|du-li-bo-ke/'>技术探索|octopress|独立博客</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yangyangonline.github.io/blog/2014/12/20/chang-shi-xiu-gai-permalink/" data-via="" data-counturl="http://yangyangonline.github.io/blog/2014/12/20/chang-shi-xiu-gai-permalink/" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2014/12/18/jin-tian-you-pobu-shang-bo-wen-liao-,555/" title="Previous Post: 今天又Po不上博文了，555">&laquo; 今天又Po不上博文了，555</a>
+      
+      
+        <a class="basic-alignment right" href="/blog/2014/12/24/ios8ding-wei-fu-wu-de-bian-hua/" title="Next Post: iOS8定位服务的变化">iOS8定位服务的变化 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2014/12/24/Octopressshi-yong-di-san-fang-zhu-ti/">Octopress试用第三方主题</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/24/ios8ding-wei-fu-wu-de-bian-hua/">iOS8定位服务的变化</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/20/chang-shi-xiu-gai-permalink/">尝试修改permalink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/18/jin-tian-you-pobu-shang-bo-wen-liao-,555/">今天又Po不上博文了，555</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2014/12/18/markdownru-men-zhi-nan/">Markdown入门指南</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - Your Name -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

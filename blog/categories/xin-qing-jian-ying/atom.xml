@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: 心情剪影 | My Octopress Blog]]></title>
+  <link href="http://yangyangonline.github.io/blog/categories/xin-qing-jian-ying/atom.xml" rel="self"/>
+  <link href="http://yangyangonline.github.io/"/>
+  <updated>2014-12-24T15:13:41+08:00</updated>
+  <id>http://yangyangonline.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[今天又Po不上博文了，555]]></title>
+    <link href="http://yangyangonline.github.io/blog/2014/12/18/jin-tian-you-pobu-shang-bo-wen-liao-,555/"/>
+    <updated>2014-12-18T18:49:44+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/2014/12/18/jin-tian-you-pobu-shang-bo-wen-liao-,555</id>
+    <content type="html"><![CDATA[<p>今天又不能Po文到Github了！我把本地octopress和网站上的对应文件夹都删了，然后重装。</p>
+
+<p>简直是醉了。</p>
+
+<p>周末老师带研一的同学泡温泉，师兄主动提出带我们出去玩，想想还挺期待的～</p>
+
+<p>周会，改写1.5产品文档，弄博客，充实的一天。</p>
+
+<p>等发工资了，去买个域名来耍！</p>
+
+<p>准备下班，去看《一步之遥》，期待了好久啊，带上鲜榨石榴汁，棒棒的！</p>
+
+<p>过两天给老爸老妈买的新年礼物应该就到了，想到他们会很开心，自己也挺开心的，还有城里的姐姐，远在南方的弟弟，年末也得联系下。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My Very First Private Blog]]></title>
+    <link href="http://yangyangonline.github.io/blog/2014/12/17/my-first-blog/"/>
+    <updated>2014-12-17T17:24:03+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/2014/12/17/my-first-blog</id>
+    <content type="html"><![CDATA[<p>你好，我是杨扬，目前就读于北京邮电大学，我想学习更多的知识，看更多的风景，感受更多的文化风情，或许，这样就不会遗憾了。</p>
+]]></content>
+  </entry>
+  
+</feed>
