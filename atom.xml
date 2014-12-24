@@ -4,7 +4,7 @@
   <title><![CDATA[YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T17:03:19+08:00</updated>
+  <updated>2014-12-24T17:04:32+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress试用第三方主题]]></title>
-    <link href="http://yangyangonline.github.io/blog/Octopressshi-yong-di-san-fang-zhu-ti/"/>
+    <link href="http://yangyangonline.github.io/blog/Octopressshi-yong-di-san-fang-zhu-ti.html"/>
     <updated>2014-12-24T14:11:00+08:00</updated>
     <id>http://yangyangonline.github.io/blog/Octopressshi-yong-di-san-fang-zhu-ti</id>
     <content type="html"><![CDATA[<p>第三方主题<a href="https://github.com/imathis/octopress/wiki/3rd-Party-Octopress-Themes">链接</a>.</p>
@@ -38,7 +38,7 @@ rake generate
   
   <entry>
     <title type="html"><![CDATA[iOS8定位服务的变化]]></title>
-    <link href="http://yangyangonline.github.io/blog/ios8ding-wei-fu-wu-de-bian-hua/"/>
+    <link href="http://yangyangonline.github.io/blog/ios8ding-wei-fu-wu-de-bian-hua.html"/>
     <updated>2014-12-24T10:06:55+08:00</updated>
     <id>http://yangyangonline.github.io/blog/ios8ding-wei-fu-wu-de-bian-hua</id>
     <content type="html"><![CDATA[<h3 id="section">定位授权</h3>
@@ -118,7 +118,7 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
   
   <entry>
     <title type="html"><![CDATA[尝试修改permalink]]></title>
-    <link href="http://yangyangonline.github.io/blog/chang-shi-xiu-gai-permalink/"/>
+    <link href="http://yangyangonline.github.io/blog/chang-shi-xiu-gai-permalink.html"/>
     <updated>2014-12-20T22:54:29+08:00</updated>
     <id>http://yangyangonline.github.io/blog/chang-shi-xiu-gai-permalink</id>
     <content type="html"><![CDATA[<p>在上一次成功构建网站后，我发现以前的permalink是这样的：</p>
@@ -208,7 +208,7 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
   
   <entry>
     <title type="html"><![CDATA[今天又Po不上博文了，555]]></title>
-    <link href="http://yangyangonline.github.io/blog/jin-tian-you-pobu-shang-bo-wen-liao-,555/"/>
+    <link href="http://yangyangonline.github.io/blog/jin-tian-you-pobu-shang-bo-wen-liao-,555.html"/>
     <updated>2014-12-18T18:49:44+08:00</updated>
     <id>http://yangyangonline.github.io/blog/jin-tian-you-pobu-shang-bo-wen-liao-,555</id>
     <content type="html"><![CDATA[<p>今天又不能Po文到Github了！我把本地octopress和网站上的对应文件夹都删了，然后重装。</p>
@@ -231,7 +231,7 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
   
   <entry>
     <title type="html"><![CDATA[Markdown入门指南]]></title>
-    <link href="http://yangyangonline.github.io/blog/markdownru-men-zhi-nan/"/>
+    <link href="http://yangyangonline.github.io/blog/markdownru-men-zhi-nan.html"/>
     <updated>2014-12-18T15:18:31+08:00</updated>
     <id>http://yangyangonline.github.io/blog/markdownru-men-zhi-nan</id>
     <content type="html"><![CDATA[<h2 id="section">目录</h2>
@@ -455,7 +455,7 @@ if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
   
   <entry>
     <title type="html"><![CDATA[Octopress+GitHub建立独立静态博客]]></title>
-    <link href="http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke/"/>
+    <link href="http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke.html"/>
     <updated>2014-12-17T20:11:41+08:00</updated>
     <id>http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
@@ -809,7 +809,7 @@ git push origin source
   
   <entry>
     <title type="html"><![CDATA[Post Title]]></title>
-    <link href="http://yangyangonline.github.io/blog/post-title/"/>
+    <link href="http://yangyangonline.github.io/blog/post-title.html"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
     <id>http://yangyangonline.github.io/blog/post-title</id>
     <content type="html"><![CDATA[<!--more-->
@@ -818,7 +818,7 @@ git push origin source
   
   <entry>
     <title type="html"><![CDATA[My Very First Private Blog]]></title>
-    <link href="http://yangyangonline.github.io/blog/my-first-blog/"/>
+    <link href="http://yangyangonline.github.io/blog/my-first-blog.html"/>
     <updated>2014-12-17T17:24:03+08:00</updated>
     <id>http://yangyangonline.github.io/blog/my-first-blog</id>
     <content type="html"><![CDATA[<p>你好，我是杨扬，目前就读于北京邮电大学，我想学习更多的知识，看更多的风景，感受更多的文化风情，或许，这样就不会遗憾了。</p>
