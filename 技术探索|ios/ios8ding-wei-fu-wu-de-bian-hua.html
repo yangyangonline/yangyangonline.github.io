@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>iOS8定位服务的变化 - YangYang’s Blog</title>
+  <meta name="author" content="杨扬">
+
+  
+  <meta name="description" content="定位授权 iOS 8 中定位服务发生了一个小变化，系统重新定义了定位授权的选项: 永不 - 用户不允许应用访问定位信息 使用期间 - 只有当应用处于前台时，应用才可以访问定位信息，后台时则不可以 始终 - 只要应用运行，无论前台后台，都可以访问定位信息 PS：应用运行指的是包含前台和后台。 &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="YangYang’s Blog" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="/javascripts/libs/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="//fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-57713953-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <h1><a href="/">YangYang’s Blog</a></h1>
+  
+    <h2>生命不止，笔耕不辍.</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+  
+<form action="https://www.google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="sitesearch" value="yangyangonline.github.io">
+    <input class="search" type="text" name="q" results="0" placeholder="Search"/>
+  </fieldset>
+</form>
+  
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">iOS8定位服务的变化</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-12-24T10:06:55+08:00'><span class='date'>“2014 年12 月24 日”</span> <span class='time'>10:06 am</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://yangyangonline.github.io">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><h3 id="section">定位授权</h3>
+
+<p>iOS 8 中定位服务发生了一个小变化，系统重新定义了定位授权的选项:</p>
+
+<p>永不 - 用户不允许应用访问定位信息</p>
+
+<p>使用期间 - 只有当应用处于前台时，应用才可以访问定位信息，后台时则不可以</p>
+
+<p>始终 - 只要应用运行，无论前台后台，都可以访问定位信息</p>
+
+<p>PS：应用运行指的是包含前台和后台。</p>
+
+<h3 id="section-1">请求定位授权</h3>
+
+<p>在 iOS 8 以前，当应用请求定位- startUpdatingLocation或是开启 iBeacon 监听- startMonitoringForRegion:和- startRangingBeaconsInRegion:时，系统会自动弹出授权请求。</p>
+
+<p>而在 iOS 8 中，访问定位信息首先需要请求授权：</p>
+
+<ul>
+  <li>requestWhenInUseAuthorization -&gt; 请求在应用前台时使用定位</li>
+  <li>requestAlwaysAuthorization -&gt; 请求在应用运行时使用定位
+注意：以上两个方法只在 iOS 8 SDK 中才有。</li>
+</ul>
+
+<p>一个简单的例子：</p>
+
+<pre><code>//创建CLLocationManager对象
+self.locationManager = [[CLLocationManager alloc] init];
+//设置代理为自己
+self.locationManager.delegate = self;
+self.locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+self.locationManager.distanceFilter = 0;
+
+[self.locationManager requestWhenInUseAuthorization];
+
+[self.locationManager startUpdatingLocation];
+</code></pre>
+
+<h3 id="section-2">填写授权提示信息</h3>
+
+<p>除了在代码中请求授权之外，还需要在工程的Info.plist文件中填写授权提示信息（该文件在 Xcode 5 中常被命名为工程名-Info.plist）.</p>
+
+<p>你需要在Info.plist中添加一个字段叫做NSLocationWhenInUseUsageDescription或NSLocationAlwaysUsageDescription，分别对应不同的授权请求。</p>
+
+<p><img src="http://i.imgur.com/ERF9vIZ.png?1" alt="picture1" />  </p>
+
+<p>这样就可以在 iOS 8 中使用定位信息了，实际应用中的对话框可能是这样的：</p>
+
+<p><img src="http://www.yxkfw.com/wp-content/uploads/2014/10/315.png" alt="picture2" /></p>
+
+<p>另外一点需要注意的是，如果你的应用请求的是- requestAlwaysAuthorization，代表在后台的时候它也有可能获取位置信息，那么 iOS 系统可能会隔一段时间会再次弹出授权对话框请求用户授权以确保隐私安全。</p>
+
+<p><img src="http://git.devzeng.com/images/ios8_location/ios8_location_alert.png" alt="picture3" /></p>
+
+<h3 id="section-3">向下兼容</h3>
+
+<pre><code>// Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+if([[[UIDevice currentDevice] systemVersion] floatValue] &gt;=8.0)
+{
+    [self.locationManager startUpdatingLocation];
+}
+</code></pre>
+
+<p>或者：</p>
+
+<pre><code>if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+    [self.locationManager requestWhenInUseAuthorization];
+}
+</code></pre>
+
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
+  
+
+<span class="byline author vcard">Posted by <span class="fn">杨扬</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-12-24T10:06:55+08:00'><span class='date'>“2014 年12 月24 日”</span> <span class='time'>10:06 am</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ji-zhu-tan-suo-|ios/'>技术探索|ios</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html" data-via="" data-counturl="http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html" >Tweet</a>
+  
+  
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Coctopress%7C%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/chang-shi-xiu-gai-permalink.html" title="Previous Post: 尝试修改permalink">&laquo; 尝试修改permalink</a>
+      
+      
+        <a class="basic-alignment right" href="/Octopressshi-yong-di-san-fang-zhu-ti.html" title="Next Post: Octopress试用第三方主题">Octopress试用第三方主题 &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/Octopressshi-yong-di-san-fang-zhu-ti.html">Octopress试用第三方主题</a>
+      </li>
+    
+      <li class="post">
+        <a href="/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html">iOS8定位服务的变化</a>
+      </li>
+    
+      <li class="post">
+        <a href="/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Coctopress%7C%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/chang-shi-xiu-gai-permalink.html">尝试修改permalink</a>
+      </li>
+    
+      <li class="post">
+        <a href="/%E5%BF%83%E6%83%85%E5%89%AA%E5%BD%B1/jin-tian-you-pobu-shang-bo-wen-liao-,555.html">今天又Po不上博文了，555</a>
+      </li>
+    
+      <li class="post">
+        <a href="/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2/markdownru-men-zhi-nan.html">Markdown入门指南</a>
+      </li>
+    
+  </ul>
+</section>
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2014 - 杨扬 -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'yangyangdisqus';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html';
+        var disqus_url = 'http://yangyangonline.github.io/%E6%8A%80%E6%9C%AF%E6%8E%A2%E7%B4%A2%7Cios/ios8ding-wei-fu-wu-de-bian-hua.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
