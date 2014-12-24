@@ -4,7 +4,7 @@
   <title><![CDATA[分类：技术探索 | YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/blog/categories/ji-zhu-tan-suo/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2014-12-24T17:01:49+08:00</updated>
+  <updated>2014-12-24T17:03:19+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -15,7 +15,7 @@
   
   <entry>
     <title type="html"><![CDATA[Markdown入门指南]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141218markdownru-men-zhi-nan/"/>
+    <link href="http://yangyangonline.github.io/blog/markdownru-men-zhi-nan/"/>
     <updated>2014-12-18T15:18:31+08:00</updated>
     <id>http://yangyangonline.github.io/blog/markdownru-men-zhi-nan</id>
     <content type="html"><![CDATA[<h2 id="section">目录</h2>
@@ -239,7 +239,7 @@
   
   <entry>
     <title type="html"><![CDATA[Octopress+GitHub建立独立静态博客]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141217octopress-plus-githubjian-li-du-li-jing-tai-bo-ke/"/>
+    <link href="http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke/"/>
     <updated>2014-12-17T20:11:41+08:00</updated>
     <id>http://yangyangonline.github.io/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke</id>
     <content type="html"><![CDATA[<h2 id="octopressgithub-pages">1.为什么选择Octopress和GitHub Pages?</h2>
@@ -593,7 +593,7 @@ git push origin source
   
   <entry>
     <title type="html"><![CDATA[Post Title]]></title>
-    <link href="http://yangyangonline.github.io/blog/20141217post-title/"/>
+    <link href="http://yangyangonline.github.io/blog/post-title/"/>
     <updated>2014-12-17T18:27:42+08:00</updated>
     <id>http://yangyangonline.github.io/blog/post-title</id>
     <content type="html"><![CDATA[<!--more-->
