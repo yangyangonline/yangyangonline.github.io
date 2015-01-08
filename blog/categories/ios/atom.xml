@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[分类：ios | YangYang’s Blog]]></title>
+  <link href="http://yangyangonline.github.io/blog/categories/ios/atom.xml" rel="self"/>
+  <link href="http://yangyangonline.github.io/"/>
+  <updated>2015-01-08T19:37:18+08:00</updated>
+  <id>http://yangyangonline.github.io/</id>
+  <author>
+    <name><![CDATA[杨扬]]></name>
+    <email><![CDATA[yangyang0902@foxmail.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[制作我的可视化的IOS代码库]]></title>
+    <link href="http://yangyangonline.github.io/blog/creat-my-visual-code-library.html"/>
+    <updated>2015-01-08T17:53:08+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/creat-my-visual-code-library</id>
+    <content type="html"><![CDATA[<h3 id="section">进度：</h3>
+
+<p>1.7</p>
+
+<p>–&gt;使用 Xcode6配置.pch文件</p>
+
+<p>–&gt;好用的在线制作Icon地址：http://makeappicon.com</p>
+
+<p>可以将任意尺寸的图标转化为iOS和android所需要的所有图标包，非常实用，开发必备。</p>
+
+<p>–&gt;寻找喜欢的配色，找到这个：</p>
+
+<p><img src="http://i.imgur.com/27Ir4Pr.png" alt="MyAppColor" /></p>
+
+<p>(附：配色网址：<a href="http://huaban.com/pins/103303443/">http://huaban.com/pins/103303443/</a>)</p>
+
+<p>–&gt;寻找并配置App的icon，找到这个：</p>
+
+<p><img src="http://i.imgur.com/JwsH3Q1.png" alt="MyAppIcon" /></p>
+
+<p>(附：APPIcon网址：<a href="http://www.easyicon.net">http://www.easyicon.net</a>)</p>
+
+<p>–&gt;建立首页，放置一个UITableView</p>
+
+]]></content>
+  </entry>
+  
+</feed>
