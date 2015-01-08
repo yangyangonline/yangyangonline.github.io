@@ -4,7 +4,7 @@
   <title><![CDATA[YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2015-01-07T17:37:41+08:00</updated>
+  <updated>2015-01-08T19:36:04+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Creat My Visual Code Library]]></title>
+    <link href="http://yangyangonline.github.io/blog/creat-my-visual-code-library.html"/>
+    <updated>2015-01-08T17:53:08+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/creat-my-visual-code-library</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[《跨界》带来的一些思索]]></title>
