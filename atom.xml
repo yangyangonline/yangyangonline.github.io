@@ -4,7 +4,7 @@
   <title><![CDATA[YangYang’s Blog]]></title>
   <link href="http://yangyangonline.github.io/atom.xml" rel="self"/>
   <link href="http://yangyangonline.github.io/"/>
-  <updated>2015-01-08T19:37:18+08:00</updated>
+  <updated>2015-01-29T11:17:47+08:00</updated>
   <id>http://yangyangonline.github.io/</id>
   <author>
     <name><![CDATA[杨扬]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Object-C和C++的速度比较及一点延伸]]></title>
+    <link href="http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html"/>
+    <updated>2015-01-29T11:14:34+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus</id>
+    <content type="html"><![CDATA[<p>问题：Objective-C与C++的速度差别大吗? Objective-C除了做iOS和Mac开发还能做啥？</p>
+
+<!--more-->
+
+<p>答：</p>
+
+<p>理论上，Objective-C和C++没有严格的谁快谁慢，一般来说编译语言比解释语言快，这两个都是编译语言。</p>
+
+<p>实际上，Objective-C的程序有一个性能问题在于消息传递，就是C++或者其他面向对象语言里面叫做调用对象的方法，C++往往写作：</p>
+
+ 	ClassA* a = new ClassA();
+ 	a-&gt;doSomething();
+
+<p>而，Objective-C写作：</p>
+
+<pre><code> ClassA* a = [[ClassA alloc] init];
+ 	[a doSomething];
+</code></pre>
+
+<p>一般情况下我们也不区分这两种有什么大区别。实际上从核心来看，C++的方法调用是比较简单的，就是一个类指针包含了一个vtable的指针，里面有这些方法的地址。而Objective-C的这个部分叫做消息传递，把一个doSomething的消息传递给对象a，a然后检查自己看看自己能不能响应doSomething这个消息。</p>
+
+<p>这样的一个机制提供了很多灵活性，但是降低了调用的效率。所以，Objective-C在这个层面上效率比较低，消息传递可能比方法调用慢几百倍。但是这在一般程序里面都是非常小的开销，一般情况下是根本忽略不计的。</p>
+
+<p>理论上Objective-C做啥都可以，不过目前主要的库是苹果在维护的Cocoa，这个东西还是比较适合做iOS和Mac开发。GNUStep可以认为是开源的Cocoa克隆，可以跨平台。苹果自己的一些软件，如iTunes的windows版本据说也是用跨平台的内部的Cocoa开发的。</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[My NoteBook for Ios Development in 2015]]></title>
+    <link href="http://yangyangonline.github.io/blog/my-notebook-for-ios-development-in-2015.html"/>
+    <updated>2015-01-09T14:44:49+08:00</updated>
+    <id>http://yangyangonline.github.io/blog/my-notebook-for-ios-development-in-2015</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[制作我的可视化的IOS代码库]]></title>

@@ -5,12 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Post Title - YangYang’s Blog</title>
+  <title>Object-C和C++的速度比较及一点延伸 - YangYang’s Blog</title>
   <meta name="author" content="杨扬">
 
   
-  <meta name="description" content="
-">
+  <meta name="description" content="问题：Objective-C与C++的速度差别大吗? Objective-C除了做iOS和Mac开发还能做啥？ 答： 理论上，Objective-C和C++没有严格的谁快谁慢，一般来说编译语言比解释语言快，这两个都是编译语言。 实际上，Objective-C的程序有一个性能问题在于消息传递，就是C &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://yangyangonline.github.io/blog/post-title.html">
+  <link rel="canonical" href="http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="YangYang’s Blog" type="application/atom+xml">
@@ -81,7 +80,7 @@
   
   <header>
     
-      <h1 class="entry-title">Post Title</h1>
+      <h1 class="entry-title">Object-C和C++的速度比较及一点延伸</h1>
     
     
       <p class="meta">
@@ -90,7 +89,7 @@
 
 
 
-<time class='entry-date' datetime='2014-12-17T18:27:42+08:00'><span class='date'>2014年12月17日</span> <span class='time'>6:27 pm</span></time>
+<time class='entry-date' datetime='2015-01-29T11:14:34+08:00'><span class='date'>2015年1月29日</span> <span class='time'>11:14 am</span></time>
         
            | <a href="#disqus_thread"
              data-disqus-identifier="http://yangyangonline.github.io">Comments</a>
@@ -100,7 +99,30 @@
   </header>
 
 
-<div class="entry-content"><!--more-->
+<div class="entry-content"><p>问题：Objective-C与C++的速度差别大吗? Objective-C除了做iOS和Mac开发还能做啥？</p>
+
+<!--more-->
+
+<p>答：</p>
+
+<p>理论上，Objective-C和C++没有严格的谁快谁慢，一般来说编译语言比解释语言快，这两个都是编译语言。</p>
+
+<p>实际上，Objective-C的程序有一个性能问题在于消息传递，就是C++或者其他面向对象语言里面叫做调用对象的方法，C++往往写作：</p>
+
+ 	ClassA* a = new ClassA();
+ 	a-&gt;doSomething();
+
+<p>而，Objective-C写作：</p>
+
+<pre><code> ClassA* a = [[ClassA alloc] init];
+ 	[a doSomething];
+</code></pre>
+
+<p>一般情况下我们也不区分这两种有什么大区别。实际上从核心来看，C++的方法调用是比较简单的，就是一个类指针包含了一个vtable的指针，里面有这些方法的地址。而Objective-C的这个部分叫做消息传递，把一个doSomething的消息传递给对象a，a然后检查自己看看自己能不能响应doSomething这个消息。</p>
+
+<p>这样的一个机制提供了很多灵活性，但是降低了调用的效率。所以，Objective-C在这个层面上效率比较低，消息传递可能比方法调用慢几百倍。但是这在一般程序里面都是非常小的开销，一般情况下是根本忽略不计的。</p>
+
+<p>理论上Objective-C做啥都可以，不过目前主要的库是苹果在维护的Cocoa，这个东西还是比较适合做iOS和Mac开发。GNUStep可以认为是开源的Cocoa克隆，可以跨平台。苹果自己的一些软件，如iTunes的windows版本据说也是用跨平台的内部的Cocoa开发的。</p>
 </div>
 
 
@@ -116,12 +138,12 @@
 
 
 
-<time class='entry-date' datetime='2014-12-17T18:27:42+08:00'><span class='date'>2014年12月17日</span> <span class='time'>6:27 pm</span></time>
+<time class='entry-date' datetime='2015-01-29T11:14:34+08:00'><span class='date'>2015年1月29日</span> <span class='time'>11:14 am</span></time>
       
 
 <span class="categories">
   
-    <a class='category' href='/blog/categories/ji-zhu-tan-suo/'>技术探索</a>
+    <a class='category' href='/blog/categories/ios/'>ios</a>
   
 </span>
 
@@ -130,7 +152,7 @@
     
       <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yangyangonline.github.io/blog/post-title.html" data-via="" data-counturl="http://yangyangonline.github.io/blog/post-title.html" >Tweet</a>
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html" data-via="" data-counturl="http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html" >Tweet</a>
   
   
   
@@ -139,10 +161,8 @@
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/my-first-blog.html" title="Previous Post: My Very First Private Blog">&laquo; My Very First Private Blog</a>
+        <a class="basic-alignment left" href="/blog/my-notebook-for-ios-development-in-2015.html" title="Previous Post: My NoteBook for Ios Development in 2015">&laquo; My NoteBook for Ios Development in 2015</a>
       
-      
-        <a class="basic-alignment right" href="/blog/octopress-plus-githubjian-li-du-li-jing-tai-bo-ke.html" title="Next Post: Octopress+GitHub建立独立静态博客">Octopress+GitHub建立独立静态博客 &raquo;</a>
       
     </p>
   </footer>
@@ -212,8 +232,8 @@
       
         
         // var disqus_developer = 1;
-        var disqus_identifier = 'http://yangyangonline.github.io/blog/post-title.html';
-        var disqus_url = 'http://yangyangonline.github.io/blog/post-title.html';
+        var disqus_identifier = 'http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html';
+        var disqus_url = 'http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html';
         var disqus_script = 'embed.js';
       
     (function () {

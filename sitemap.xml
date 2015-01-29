@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yangyangonline.github.io/blog/the-speed-between-oc-and-c-plus-plus.html</loc>
+    <lastmod>2015-01-29T11:14:34+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://yangyangonline.github.io/blog/my-notebook-for-ios-development-in-2015.html</loc>
+    <lastmod>2015-01-09T14:44:49+08:00</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>http://yangyangonline.github.io/blog/creat-my-visual-code-library.html</loc>
     <lastmod>2015-01-08T17:53:08+08:00</lastmod>
     <priority>0.8</priority>
@@ -67,13 +77,13 @@
   </url>
   <url>
     <loc>http://yangyangonline.github.io/blog/archives/</loc>
-    <lastmod>2015-01-08T19:37:18+08:00</lastmod>
+    <lastmod>2015-01-29T11:17:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>http://yangyangonline.github.io/</loc>
-    <lastmod>2015-01-08T19:37:18+08:00</lastmod>
+    <lastmod>2015-01-29T11:17:47+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
