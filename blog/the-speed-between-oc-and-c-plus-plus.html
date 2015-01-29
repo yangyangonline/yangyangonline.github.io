@@ -109,13 +109,14 @@
 
 <p>实际上，Objective-C的程序有一个性能问题在于消息传递，就是C++或者其他面向对象语言里面叫做调用对象的方法，C++往往写作：</p>
 
- 	ClassA* a = new ClassA();
- 	a-&gt;doSomething();
+<pre><code>ClassA* a = new ClassA();
+a-&gt;doSomething();
+</code></pre>
 
 <p>而，Objective-C写作：</p>
 
 <pre><code> ClassA* a = [[ClassA alloc] init];
- 	[a doSomething];
+ [a doSomething];
 </code></pre>
 
 <p>一般情况下我们也不区分这两种有什么大区别。实际上从核心来看，C++的方法调用是比较简单的，就是一个类指针包含了一个vtable的指针，里面有这些方法的地址。而Objective-C的这个部分叫做消息传递，把一个doSomething的消息传递给对象a，a然后检查自己看看自己能不能响应doSomething这个消息。</p>
